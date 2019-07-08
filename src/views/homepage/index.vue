@@ -16,7 +16,8 @@ export default {
   },
   methods: {
     goEchatsPage () {
-      this.$router.push('/echartspage-line')
+      // this.$router.push('/echartspage-line')
+      this.$router.push('/401')
     }
   },
   components: {

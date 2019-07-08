@@ -13,6 +13,11 @@ Vue.use(ElementUI);
 
 import router from './router'
 
+router.beforeEach((to, from, next) => {
+  console.log(to, from)
+  next()
+})
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

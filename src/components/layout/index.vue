@@ -44,9 +44,7 @@ export default {
           $('.nav-menu-fold').removeClass('header-wrapper-move-sty-right')
           $('.nav-menu-fold').addClass('header-wrapper-move-sty-left')
           $('.navbar-wrapper').animate({width: 50})
-          $('.content-wrapper').animate({width: (1-50/winWidth)*winWidth}, function () {
-            // this.$store.commit('SET_MENUFOLD')
-          })
+          $('.content-wrapper').animate({width: (1-50/winWidth)*winWidth})
         }
       })
     }

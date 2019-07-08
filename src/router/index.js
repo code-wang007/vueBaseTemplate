@@ -6,6 +6,8 @@ Vue.use(Router)
 import layout from '@/components/layout/Index'
 import Homepage from '@/views/homepage/index'
 import Login from '@/views/login/login'
+import ErrorPageOne from '@/views/errorPage/401'
+import ErrorPageFour from '@/views/errorPage/404'
 
 import Echartspage from './routes/echartspage'
 import useArtTemplate from './routes/useArtTemplate'
@@ -47,6 +49,14 @@ const router = new Router({
      {
        path: '/login',
        component: Login
+     },
+     {
+       path: '/401',
+       component: ErrorPageOne
+     },
+     {
+       path: '/404',
+       component: ErrorPageFour
      }
   ]
 })

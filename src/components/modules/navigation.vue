@@ -3,9 +3,7 @@
     <div>
       <el-menu
       :data="routerMenu"
-      :collapse="foldFlag"
       :router="true"
-      @close="handleClose"
       collapse-transition
       background-color="#385dae"
       active-text-color="#fff"
